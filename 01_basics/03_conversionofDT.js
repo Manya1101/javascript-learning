@@ -26,4 +26,14 @@ console.log(thenum);
 // conversion of given val into boolean
 let isloggedIn = 0;
 let logging = Boolean(isloggedIn);
-console.log(logging);
+console.log(logging); //gives false o/p
+ 
+//1 => true , 0=>false 
+//"" => false (empty string)
+//"manya" => true 
+ 
+// -----------------------OPERATIONS------------------------------
+
+let val = 2;
+let neg  = -val;
+console.log(neg);
