@@ -36,4 +36,19 @@ console.log(logging); //gives false o/p
 
 let val = 2;
 let neg  = -val;
-console.log(neg);
+console.log(neg); // o/p => -2
+
+console.log("1" +2+2); // o/p => 122
+console.log(1 + 2+ "2"); // o/p =>32 
+//basically if string is first then everything is considered as string 
+//if number is first then first summition happens and then string is attached 
+
+//------------POSTFIX(x++) AND PREFIX(++x) INCREMENT----------------
+
+let x = 5;
+let y = x++; //use old value first, then increase
+let a = 5;
+let b = ++a; //increase first, then use value
+/*   OUTPUT  : x = 6, y = 5;
+               a = 6, b = 6;            
+*/

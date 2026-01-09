@@ -46,5 +46,43 @@ let age =21;
 console.log(typeof age);
 
 //Important for interviews 
-console.log(typeof null);
-console.log(typeof undefined);
+console.log(typeof null); // its give o/p -> object (which is considerd error or thats how JS works )
+console.log(typeof undefined); //it gives o/p -> undefined (which is true kinda )
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (memory for Primitive datatype) and Heap (for non primitive datatype)
+ 
+//Stack Memory ; it stores value directly 
+
+let myname = "ManyaAgg";
+let nickname = "Maniee";
+
+console.log(myname);
+console.log(nickname);
+
+//if we change the nickname val
+nickname = "Anie";
+console.log(myname); //the myname val , i.e the origional val wont change 
+console.log(nickname); // only the new val will change as the value earleir was copied for this 
+
+//Heap : Stores reference (Address) to data , dynamic memo
+
+let userone ={
+    firstname : "Manya",
+    sirname : "Aggarwal"
+};
+let usertwo = userone;
+
+console.log(userone);
+console.log(usertwo);
+
+//if we change
+usertwo.firstname = "Manie";
+console.log(userone); //so here both the object values will changes
+console.log(usertwo); // as they are both poinitng to same memory
+
+
+
+
+
