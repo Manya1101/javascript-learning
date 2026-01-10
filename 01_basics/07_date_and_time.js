@@ -19,4 +19,4 @@ console.log(myTimeStamp); // gives time in millisec
 console.log(myTimeStamp /1000); // in seconds but decimal val too
 console.log(Math.floor(myTimeStamp/1000)); // remove decimal
 
-console.log(mynewDate.getTime());
+console.log(mynewDate.getTime()); // milliseconds for Jan 1, 2025

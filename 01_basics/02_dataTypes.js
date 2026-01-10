@@ -51,9 +51,9 @@ console.log(typeof undefined); //it gives o/p -> undefined (which is true kinda 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//Stack (memory for Primitive datatype) and Heap (for non primitive datatype)
+//---------------------Stack (memory for Primitive datatype) and Heap (for non primitive datatype)
  
-//Stack Memory ; it stores value directly 
+//---------Stack Memory ; it stores value directly 
 
 let myname = "ManyaAgg";
 let nickname = "Maniee";
@@ -66,8 +66,8 @@ nickname = "Anie";
 console.log(myname); //the myname val , i.e the origional val wont change 
 console.log(nickname); // only the new val will change as the value earleir was copied for this 
 
-//Heap : Stores reference (Address) to data , dynamic memo
-
+//------------Heap : Stores reference (Address) to data , dynamic memo
+//shallow copy
 let userone ={
     firstname : "Manya",
     sirname : "Aggarwal"
