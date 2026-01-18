@@ -40,22 +40,27 @@ console.log(newObj);
 console.log(Object.keys(tuser)); //[ 'id', 'name', 'isLogged' ]
 console.log(Object.values(tuser)); //[ '123', 'Ahan', false ]
 
-//------------------ Object De-structuring---------------------
+//-----------------------Object De-structuring---------------------
 //short way to extract values from an object and store them in variables
 
-// foreg: 
+// example
 const user = {
   myname: "Manya",
   myage: 21
 };
 
-// //without destructing
-// const myname = user.myname;
-// const myage = user.myage;
-//with destructing
-const {myname ,myage} = user;
-console.log(myname);
-console.log(myage);
-//Rename while destructuring
-const{myname : thename} = user;
+// without destructuring
+const name1 = user.myname;
+const age1 = user.myage;
+console.log(name1); // Manya
+console.log(age1);  // 21
+
+// with destructuring
+const { myname, myage } = user;
+console.log(myname); // Manya
+console.log(myage);  // 21
+
+// rename while destructuring
+const { myname: thename } = user;
+console.log(thename); // Manya
 
