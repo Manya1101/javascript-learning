@@ -43,7 +43,7 @@ JS runs code using Execution Contexts.
 */
 
 /* ---------- Hoisting ----------
-Declarations are moved to top in creation phase
+Hoisting = memory allocation during creation phase
 
 var       → hoisted, value = undefined
 let/const → hoisted, TDZ (cannot access before init)
