@@ -29,11 +29,11 @@ console.log(real_new);
 console.log(r_new);
 
 //isArray 
-//synta : Array.isArray(value);
+//syntax : Array.isArray(value);
 let arr = [12,3,4];
 let obj ={q:1,w:3};
 console.log(Array.isArray(arr)); //true
 console.log(Array.isArray(obj)); //false
 //  convert into array 
-console.log(Array.from("Manya"));
-console.log(Array.from({name : "manya"}));
+console.log(Array.from("Manya")); //[ 'M', 'a', 'n', 'y', 'a' ]
+console.log(Array.from({name : "manya"})); //[]

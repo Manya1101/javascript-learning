@@ -13,7 +13,7 @@ user.name = "Maniee"
 user.welcomeMsg()
 console.log(this) // o/p : {} in code enviroment 
 
-// o/p og this in browser is window 
+// o/p of this in browser is window 
 //o/p of this in strict mode is undefined 
 
 //why this ? 
@@ -25,18 +25,41 @@ console.log(this) // o/p : {} in code enviroment
 //inside arrow fns as object method 
 //when simple variables are enough
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //----------------------------------ARROW FUNCTION---------------------------------------------
-
 //Its a  shorter way to write a function in J.S
 
 //normal function 
 function add(a,b){
-    console.log(a+b);
    // return a+b;
 }
-//arrow function
+ console.log(add(2,3)); 
+
+//arrow function (normal) ; explicit return
+const addtwo = (nums1,nums2) =>{
+    return num1+nums2;
+}
+console.log(addtwo(2,3));
+
+//arrow function (implicit return) : means where nno need to write return 
 const adder = (a ,b) => a+b;
 
-add(5,6);
+// if {} is written then we need to write return 
+// but if curly braces are not present then we need not to write return 
+
+//Returning Objects
+const getUser = () => ({  //You must wrap the object in parentheses.
+  name: "Manya", 
+  role: "Developer" 
+});
+
+
+//------------Arrow Functions & this-----------------
+
+//Normal function → has its own this
+// Arrow function → does NOT have its own this
+// It takes this from the surrounding scope (lexical this).
+//Rule:
+//Never use arrow functions as object methods if you need this.
+//basically arrow function ko object ke andar mt use kro agar this use krna h toh 

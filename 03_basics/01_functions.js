@@ -14,6 +14,17 @@ console.log(res); // o/p : undefined bcz the function is not returning
 //  console.log() → just prints and return → gives value back
 
 function sumnum(n1,n2){
-    return n1+n2;
+    return n1+n2; 
 }
 console.log(sumnum(1,1));
+ 
+//A method = a function stored as a property of an object
+ const user = {
+  name: "Manya",
+  greet: function () {
+    console.log("Hello");
+  }
+};
+// Here greet -> property name
+//function () {} → function value
+//Together → object method

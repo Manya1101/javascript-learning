@@ -24,6 +24,7 @@ console.log(user[mySym]); // symbol can be accesssed through this mtd only not w
 
 //change the val of object
 //user.location = "london";
+
 //lock the val
 // Object.freeze(user);
 // user.location = "paris";
