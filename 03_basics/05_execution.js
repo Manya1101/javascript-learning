@@ -1,5 +1,6 @@
  // JAVASCRIPT EXECUTION CONTEXT
-
+//Javascript is a synchronous single threaded language , i.e , code is executed line
+//by line .
  /*
 Execution Context (EC):
 Environment where JS code is created & executed.
