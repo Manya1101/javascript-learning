@@ -44,22 +44,37 @@ JS runs code using Execution Contexts.
 */
 
 /* ---------- Hoisting ----------
-Hoisting = memory allocation during creation phase
+Hoisting = accessing the functions or variables even before they are initialized
 
-var       → hoisted, value = undefined
-let/const → hoisted, TDZ (cannot access before init)
-function  → hoisted with full body
+var → exists early, value = undefined
+let / const → exists early, but don’t touch before line
+function() → ready to use anytime
+Arrow function → behaves like variable
+
 */
 
 /* ---------- Temporal Dead Zone (TDZ) ----------
 Time between hoisting and initialization
+TDZ is the time when a let or const variable exists, but you are NOT allowed to use it yet.
 Accessing let/const in TDZ → ReferenceError
+{
+  // TDZ starts
+  console.log(x); // ❌ not allowed
+  // x exists but locked
+
+  let x = 5; // TDZ ends
+  console.log(x); // ✅ allowed
+}
+TDZ does NOT apply to var
 */
 
 /* ---------- Call Stack ----------
-Stack that manages execution contexts
+Stack that manages order of execution contexts
 LIFO (Last In First Out)
-
+Its known by many diffrent names like : 
+Execution Contect Stack 
+Program stack
+Control stack
 Example:
 Global EC → a() → b()
 */
